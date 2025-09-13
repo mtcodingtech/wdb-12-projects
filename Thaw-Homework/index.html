@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="my">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="clock-wrap" aria-label="Digital clock">
+      <section class="display" role="region" aria-labelledby="clock-label">
+        <div class="time" aria-hidden="false">
+          <div class="digits" id="hhmm" aria-live="off">00:00</div>
+          <div class="seconds" id="ss">00</div>
+          <div class="ampm" id="ampm" aria-hidden="true">
+            <span id="ampmText">AM</span>
+            <small style="opacity: 0.8">local</small>
+          </div>
+        </div>
+
+        <div class="meta">
+          <div class="date" id="date" aria-live="polite">—</div>
+          <div class="controls" aria-hidden="false">
+            <button class="btn" id="toggle24">24h</button>
+            <button class="btn secondary" id="themeBtn">Theme</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
