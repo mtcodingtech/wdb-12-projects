@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    transition: background 1s ease;
+}
+
+.clock-container {
+    text-align: center;
+}
+
+.time-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 40px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #4a148c, #880e4f, #1a237e);
+    transition: background 1s ease;
+}
+
+.time-part {
+    text-align: center;
+}
+
+.label {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.value {
+    font-size: 60px;
+    font-weight: bold;
+    }
+
+    .colon {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.date-box {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #6a1b9a, #ad1457, #283593);
+    font-size: 22px;
+    font-weight: bold;
+    transition: background 1s ease;
+}
